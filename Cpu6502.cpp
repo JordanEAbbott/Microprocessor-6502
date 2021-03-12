@@ -545,7 +545,7 @@ uint8_t Cpu6502::DEY() {
 	setFlag(N, tmp & 0x80);
 	setFlag(Z, (tmp & 0x00FF) == 0);
 
-	X = tmp;
+	Y = tmp;
 	return 0;
 }
 
@@ -589,7 +589,7 @@ uint8_t Cpu6502::INY() {
 	setFlag(N, tmp & 0x80);
 	setFlag(Z, (tmp & 0x00FF) == 0);
 
-	X = tmp;
+	Y = tmp;
 	return 0;
 }
 
